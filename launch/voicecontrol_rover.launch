@@ -1,0 +1,11 @@
+<launch>
+
+<include file="$(find rc_armsim)/arm_simple_rviz.launch" />
+
+<node name="google_recognizer" pkg="rc_armsim" type="google_recognizer.py" />
+
+<node name="voicecontrol_rover" pkg="robot_rover_package" type="voicecontrol_rover.py" />
+
+<node name="rqt_graph" pkg="rqt_graph" type="rqt_graph" />
+
+</launch>
